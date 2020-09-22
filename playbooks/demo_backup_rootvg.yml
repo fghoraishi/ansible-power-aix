@@ -4,7 +4,7 @@
   gather_facts: no
   vars:
     type_v:                     "mksysb"
-    volume_group_v:             "vg00"      # volume group where /ESSAI resides
+    volume_group_v:             "rootvg"      # volume group where /ESSAI resides
     disk_v:                     "hdisk1"    # hdisk1 is part of vg00
     location_create_v:          "/ESSAI/rootvg_sysb"
     restore_fs_v:               "/tmp"
