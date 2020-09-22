@@ -1,0 +1,12 @@
+---
+- name: "Update all hosts -  x86, power"
+  hosts: all
+  gather_facts: yes
+
+  tasks:
+
+  - name: Check oslevel of AIX system
+    shell: "oslevel -s"
+    when: ansible_distribution == 'AIX'
+    register: output
+  - debug: var=output
